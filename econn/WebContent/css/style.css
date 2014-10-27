@@ -1,0 +1,265 @@
+@CHARSET "UTF-8";
+
+*
+{
+	outline: 					0;
+	font-size: 					100%;
+	vertical-align: 			baseline;
+	background: 				transparent;
+	margin: 					0;
+	padding: 					0;
+}
+
+html, body
+{
+	height: 					100%;
+	margin:						0;
+}
+
+:focus
+{
+	outline:					0;
+}
+
+body
+{
+	line-height:				1.5;
+	background:					url(../img/background.jpg) black no-repeat;
+	background-size: 			100%;
+	border:						0;
+/* 	color:						#FFF; */
+	font-family:				Arial, Arial, Helvetica, sans-serif;
+	font-size:					12px;
+	text-align:					left;
+/* 	overflow-y:					scroll; */
+}
+
+@font-face
+{
+    font-family: 				Elektra; /* Гарнитура шрифта */
+    src: 						url(fonts/elektra.otf); /* Путь к файлу со шрифтом */
+}
+
+.w960
+{
+	float:						center;
+	width: 						960px;
+	margin:						0 auto;
+	max-width: 					1000px;
+	min-width: 					300px;
+}
+
+.w960 div
+{
+/* 	border:						1px solid red; */
+	position:					relative;
+	-moz-box-sizing: 			border-box; /* Для Firefox */
+    -webkit-box-sizing: 		border-box; /* Для Safari и Chrome */
+    box-sizing: 				border-box; /* Для IE и Opera */
+}
+
+.topic
+{
+	margin: 					10px 0px 0px 10px;
+	width:						940px;
+	height:						120px;
+	background:					url(../img/topic.png) white no-repeat;
+	background-size: 			cover;
+}
+
+.logo
+{
+	width:						200px;
+	height:						100%;
+	border-right:				1px solid #006a00;
+	float: 						left;
+}
+
+.logo img
+{
+	width:						100%;
+	height:						100%;
+}
+
+.top
+{
+	width:						440px;
+	height:						60px;
+	float: 						left;
+	border-bottom:				1px solid #006a00;
+}
+
+.menu
+{
+	width:						440px;
+	height:						60px;
+	overflow:					hidden;
+	float: 						left;
+}
+
+.menu a
+{
+	width:						110px;
+	height:						100%;
+	text-decoration:			none;
+	display: 					block;
+	float: 						left;
+	text-align:					center;
+	color:						#006a00;
+	font-family:				Elektra, 'Elektra Text Pro', italic;
+	font-size:					16px;
+	font-weight:				700;
+	padding-top: 				17px;
+}
+
+.menu a:HOVER
+{
+	background:					linear-gradient(to top, #00c600 0%, #006a00 60%, #00c600 100%);
+	color:						#fff;
+}
+
+.menu a:ACTIVE
+{
+	background:					linear-gradient(to top, #006a00 0%, #00c600 60%, #006a00 100%);
+}
+
+.menu a.active
+{
+	color:						white;
+}
+
+.info
+{
+	width:						300px;
+	height:						100%;
+	border-left:				1px solid #006a00;
+	float: 						right;
+	text-align: 				center;
+}
+
+.info .infoBlock
+{
+	margin:						20px auto 0px;
+	clear:						both;
+	display:					inline-block;
+}
+
+.info img
+{
+	width:						30px;
+	height:						30px;
+	float: 						left;
+}
+
+.info .infoText
+{
+	float: 						left;
+	font-family:				Elektra, 'Elektra Text Pro', italic;
+	font-size:					20px;
+	color:						#006a00;
+	font-weight:				900;
+}
+
+.info .infoText a
+{
+	text-decoration:			none;
+	color:						#006a00;
+}
+
+.info .infoText a:ACTIVE
+{
+	color:						#000000;
+}
+
+.content
+{
+	margin: 					10px 0px 0px 10px;
+	width:						940px;
+	background:					white;
+	float:						left;
+}
+
+.content .service
+{
+	width:						199px;
+	min-height:					570px;
+	float: 						left;
+}
+
+.content .text
+{
+	width:						741px;
+	padding: 					10px;
+	min-height:					570px;
+	border-left:				1px solid #006a00;
+	float: 						left;
+}
+
+.content .text h2
+{
+	margin:						10px 0 10px 10px;
+	font-family:				Elektra, 'Elektra Text Pro', italic;
+	font-size:					14px;
+	color:						#006a00;
+}
+
+.content .text ul
+{
+	list-style-position: 		inside;
+	list-style-image: 			url(../img/listmark.png);
+	text-align:					justify;
+}
+
+.content .text ul.mini
+{
+	list-style-image:			none;
+	list-style-type: 			square;
+}
+
+.content .text ul li span
+{
+	font-style: 				italic;
+	font-size:					16px;
+}
+
+.content .text p
+{
+	margin-top:					10px;
+	text-indent:				20px;
+	text-align:					justify;
+}
+
+.content .text p.bold
+{
+	font-weight:				800;
+}
+
+.content .text p.bold span
+{
+	text-decoration: 			underline;
+}
+
+.content .text .map
+{
+	margin-top:					10px;
+	width: 						720px;
+	height: 					400px;
+}
+
+.footer
+{
+	margin: 					10px 0px 10px 10px;
+	width:						940px;
+	height:						60px;
+	background:					white;
+	background:					url(../img/footer.png) white no-repeat;
+	background-size: 			cover;
+	float:						left;
+}
+
+.info p
+{
+	font-family:				Elektra, 'Elektra Text Pro', italic;
+	font-size:					14px;
+	margin-top:					20px;
+}
